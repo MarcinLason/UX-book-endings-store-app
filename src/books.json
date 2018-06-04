@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "author": "J. K. Rowling",
+    "title": "Harry Potter i kamien filozoficzny",
+    "rank": 4.6,
+    "year": "1997",
+    "number": "32592713942932",
+    "publisher": "Media Rodzina",
+    "pages": "325",
+    "domain": "Fantasy",
+    "description": "Harry Potter i Kamień Filozoficzny – pierwsza książka z siedmiotomowego cyklu autorstwa angielskiej powieściopisarki J.K. Rowling, przedstawiająca początek historii młodego czarodzieja Harry’ego Pottera."
+  },
+  {
+    "id": 1,
+    "author": "Carlos Ruiz Zafon",
+    "title": "Cień wiatru",
+    "rank": 2.7,
+    "year": "2001",
+    "number": "325912113942935",
+    "publisher": "Planeta",
+    "pages": "565",
+    "domain": "Kryminał",
+    "description": "Akcja powieści rozgrywa się w Barcelonie w drugiej połowie XX wieku, ale w retrospekcjach pojawiają się lata wcześniejsze. Bohaterem jest Daniel Sempere. Towarzyszymy mu od 10 roku życia, kiedy to jego ojciec zaprowadza go na Cmentarz Zapomnianych Książek. Od tego momentu zaczyna się historia Daniela, próbującego odkryć tajemnicę zawiązaną z autorem jednej z zapomnianych książek - Julianem Caraxem. Daniel, zauroczony powieścią Caraxa Cień wiatru, próbuje odnaleźć inne książki jego autorstwa. Okazuje się jednak, że wszystkie książki zostały spalone. Komuś zależy również na zniszczeniu ostatniego egzemplarza, który znajduje się w posiadaniu nastoletniego chłopaka. Autor wprowadza do powieści wiele postaci i wątków, które, pozornie luźno ze sobą związane, na końcu prowadzą do rozwiązania zagadki."
+  },
+  {
+    "id": 2,
+    "author": "Robert C. Martin",
+    "title": "Czysty Kod",
+    "rank": 3.5,
+    "year": "2014",
+    "number": "9788328302341",
+    "publisher": "Helion",
+    "pages": "424",
+    "domain": "Dydaktyka",
+    "description": "O tym, ile problemów sprawia niedbale napisany kod, wie każdy programista. Nie wszyscy jednak wiedzą, jak napisać ten świetny, czysty kod i czym właściwie powinien się on charakteryzować. Co więcej - jak odróżnić dobry kod od złego? Odpowiedź na te pytania oraz sposoby tworzenia czystego, czytelnego kodu znajdziesz właśnie w tej książce. Podręcznik jest obowiązkową pozycją dla każdego, kto chce poznać techniki rzetelnego i efektywnego programowania. W książce Czysty kod. Podręcznik dobrego programisty szczegółowo omówione zostały zasady, wzorce i najlepsze praktyki pisania czystego kodu. Podręcznik zawiera także kilka analiz przypadków o coraz większej złożoności, z których każda jest doskonałym ćwiczeniem porządkowania zanieczyszczonego bądź nieudanego kodu.Z tego podręcznika dowiesz się m.in., jak tworzyć dobre nazwy, obiekty i funkcje, a także jak tworzyć testy jednostkowe i korzystać z programowania sterowanego testami. Nauczysz się przekształcać kod zawierający problemy w taki, który jest solidny i efektywny."
+  },
+  {
+    "id": 3,
+    "author": "Stieg Larsson",
+    "title": "Mężczyźni, którzy nienawidzą kobiet",
+    "rank": 4.6,
+    "year": "2005",
+    "number": "56592713942933",
+    "publisher": "Norstedts Forlag",
+    "pages": "628",
+    "domain": "Dreszczowiec",
+    "description": ""
+  }
+]
