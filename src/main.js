@@ -43,10 +43,16 @@ class Header extends React.Component {
 class TableContainer extends React.Component {
 
     columns = [{
+        id: 'id',
+        Header: '',
+        accessor: 'id',
+        Cell: props => <a href={"book/" + props.value}>LINK </a>,
+        width: 50,
+    }, {
         id: 'TitleColumnId',
         Header: 'Title',
         accessor: 'title',
-        Cell: props => <a href={"book/" + props.value}>{props.value}</a>,
+        Cell: props => props.value,
         width: 300,
         filterable: true,
         filterMethod: (filter, row) =>
