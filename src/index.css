@@ -125,3 +125,9 @@ th {
     text-align: center;
     width: 34px;
 }
+
+textarea {
+    border: #6f7471;
+    min-height: 100px;
+}
+

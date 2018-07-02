@@ -9,7 +9,19 @@
     "publisher": "Media Rodzina",
     "pages": "325",
     "domain": "Fantasy",
-    "description": "Harry Potter i Kamień Filozoficzny – pierwsza książka z siedmiotomowego cyklu autorstwa angielskiej powieściopisarki J.K. Rowling, przedstawiająca początek historii młodego czarodzieja Harry’ego Pottera."
+    "description": "Harry Potter i Kamień Filozoficzny – pierwsza książka z siedmiotomowego cyklu autorstwa angielskiej powieściopisarki J.K. Rowling, przedstawiająca początek historii młodego czarodzieja Harry’ego Pottera.",
+    "comments": {
+      "comment1": {
+        "date": "22.04.2018r.",
+        "name": "Paweł Kasprzyk",
+        "text": "Świetna książka, polecam zarówno tym młodszym jak i tym odrobinę starszym."
+      },
+      "comment2": {
+        "date": "04.05.2018r.",
+        "name": "Jan Nowak",
+        "text": "Przeciętna pozycja, strata czasu."
+      }
+    }
   },
   {
     "id": 1,

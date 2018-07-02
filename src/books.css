@@ -1,0 +1,28 @@
+#bookImg {
+    height: 230px;
+}
+
+.bookDetails {
+    align: right;
+}
+
+#bookParameters {
+    float: right;
+    width: 40%;
+    max-height: 250px;
+    margin-bottom: 30px;
+}
+
+.bookParams {
+    font-weight: bold;
+    align: left;
+}
+
+#bookParameters td {
+    border: #a6aca8;
+    line-height: 0.8;
+}
+
+#description-area {
+    width: 90%;
+}
