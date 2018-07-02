@@ -6,6 +6,7 @@ import image2 from './assets/2.jpg';
 import image3 from './assets/3.jpg';
 import './books.css';
 import StarRatingComponent from 'react-star-rating-component';
+import {Header} from './main'
 
 class StarComponent extends React.Component {
     constructor(props) {
@@ -15,12 +16,13 @@ class StarComponent extends React.Component {
             rating: this.props.rate
         };
     }
+
     onStarClick(nextValue, prevValue, name) {
         this.setState({rating: nextValue});
     }
 
     render() {
-        const { rating } = this.state;
+        const {rating} = this.state;
 
         return (
             <div>
@@ -122,8 +124,10 @@ class BookParameters extends React.Component {
 
 const Book = () => {
     var url = window.location.href;
+    var date = new Intl.DateTimeFormat('en-GB').format(Date.now());
     return (
         <div className="book">
+            <Header username='Marcin Lason' date={date} appTitle='Book Endings Store'/>
             <BookParameters url={url}/>
         </div>
     );

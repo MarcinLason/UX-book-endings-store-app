@@ -23,7 +23,7 @@ class HeaderBlock extends React.Component {
     }
 }
 
-class Header extends React.Component {
+export class Header extends React.Component {
 
     renderHeaderBlock(title, id) {
         return <HeaderBlock title={title} id={id}/>
