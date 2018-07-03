@@ -99,7 +99,7 @@ class BookParameters extends React.Component {
                     <StarComponent rate={currentBook['rank']}/>
                 </div>
                 <div>
-                    <textarea id="description-area">{currentBook['description']}</textarea>
+                    <textarea disabled id="description-area">{currentBook['description']}</textarea>
                 </div>
                 <div id="com-end">
                     <div id="comments">
@@ -128,7 +128,9 @@ const Book = () => {
     return (
         <div className="book">
             <Header username='Marcin Lason' date={date} appTitle='Book Endings Store'/>
-            <BookParameters url={url}/>
+            <div className="container">
+                <BookParameters url={url}/>
+            </div>
         </div>
     );
 }

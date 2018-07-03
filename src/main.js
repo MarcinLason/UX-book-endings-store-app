@@ -107,7 +107,9 @@ class Main extends React.Component {
         return (
             <div className="page">
                 <Header username='Marcin Lason' date={date} appTitle='Book Endings Store'/>
-                <TableContainer/>
+                <div className="container">
+                    <TableContainer/>
+                </div>
             </div>);
     }
 }

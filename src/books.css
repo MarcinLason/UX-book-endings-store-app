@@ -26,3 +26,26 @@
 #description-area {
     width: 90%;
 }
+
+StarRatingComponent{
+    min-height: 100px;
+    min-width: 100px;
+}
+
+#comments {
+    width: 48%;
+    float: left;
+}
+
+#endings {
+    width: 48%;
+    float: right;
+}
+
+#endings-area {
+    width: 100%;
+}
+
+#comments-area {
+    width: 100%;
+}
