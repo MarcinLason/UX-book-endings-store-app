@@ -1,7 +1,12 @@
 [
   {
-    "title": "tytul1",
-    "author": "author1"
+    "id": 0,
+    "endingsTitle": "tytul1",
+    "endingsAuthor": "author1",
+    "booksTitle": "bookTitle",
+    "booksAuthor": "bookAuthor",
+    "booksLink": "link",
+    "rank" : 3.5
   },
 
   {
