@@ -5,13 +5,31 @@ import './index.css';
 import books from './books.json';
 import endings from './endings.json';
 import cloneDeep from 'lodash/cloneDeep';
+import image0 from './assets/0.jpg';
+import image1 from './assets/1.jpg';
+import image2 from './assets/2.jpg';
+import image3 from './assets/3.jpg';
+
+function getImageToDisplay(id) {
+    if (id == 0) {
+        return image0;
+    }
+    if (id == 1) {
+        return image1;
+    }
+    if (id == 2) {
+        return image2;
+    } else {
+        return image3;
+    }
+}
 
 var bookColumns = [{
     id: 'id',
     Header: '',
     accessor: 'id',
-    Cell: props => <a href={"book/" + props.value}>LINK </a>,
-    width: 50,
+    Cell: props => <a href={"book/" + props.value}><img id="bookLink" height={60} width={60} src={getImageToDisplay(props.value)} alt="Logo"/></a>,
+    width: 60
 }, {
     id: 'TitleColumnId',
     Header: 'Title',
