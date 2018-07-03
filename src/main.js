@@ -33,22 +33,31 @@ var bookColumns = [{
     width: 100
 }];
 
-var endingsColumns = [{
-    id: 'TitleColumnId',
-    Header: 'Title',
-    accessor: 'title',
-    Cell: props => props.value,
+var endingsColumns = [ {
+    id: 'EndingsTitleColumnId',
+    Header: 'Endings title',
+    accessor: 'endingsTitle',
     width: 300,
     filterable: true,
     filterMethod: (filter, row) =>
         row[filter.id].startsWith(filter.value)
+},  {
+    id: 'TitleColumnId',
+    Header: 'Books Title',
+    accessor: 'relatedBook',
+    Cell: props => <a href={"book/" + props.value.booksId}>{props.value.booksTitle} </a>,
+    width: 300
 }, {
     id: 'AuthorColumnId',
-    Header: 'Author',
-    accessor: 'author',
+    Header: 'Books Author',
+    accessor: 'relatedBook',
+    Cell: props => props.value.booksAuthor,
     width: 400
 }, {
-    id: ''
+    id: 'RankColumnId',
+    Header: 'Rating',
+    accessor: 'rating',
+    width: 200
 }]
 
 class HeaderBlock extends React.Component {
@@ -92,8 +101,8 @@ class TableContainer extends React.Component {
         super(props);
 
         this.state = {
-            tableDataset: cloneDeep(endings),
-            tableColumns: cloneDeep(endingsColumns)
+            tableDataset: cloneDeep(books),
+            tableColumns: cloneDeep(bookColumns)
         }
     }
 
@@ -118,9 +127,6 @@ class TableContainer extends React.Component {
     render() {
         return (
             <div className="TableContainer">
-                <div className="Search">
-                    <input type="text" id="searchInput" name="searchString" placeholder="Type to search..."/>
-                </div>
                 <div className="RadioButtons">
                     <form id="searchParameterForm">
                         <label>
@@ -134,7 +140,7 @@ class TableContainer extends React.Component {
                 <div className="BookEndingsButtons">
                     <form id="bookEndingsForm">
                         <label>
-                            <input type="radio" name="bookending" defaultChecked={false} value="books"
+                            <input type="radio" name="bookending" defaultChecked={true} value="books"
                                    onClick={() => this.handleBooksClick()}/>Books
                         </label><br/>
                         <label>

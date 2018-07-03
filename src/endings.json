@@ -1,16 +1,80 @@
 [
   {
     "id": 0,
-    "endingsTitle": "tytul1",
+    "endingsTitle": "Jednak to był on",
     "endingsAuthor": "author1",
-    "booksTitle": "bookTitle",
-    "booksAuthor": "bookAuthor",
-    "booksLink": "link",
-    "rank" : 3.5
+    "relatedBook": {
+      "booksTitle": "Harry Potter i kamien filozoficzny",
+      "booksAuthor": "J. K. Rowling",
+      "booksId": 0
+    },
+    "rating" : 3.5
   },
 
   {
-    "title": "tytul2",
-    "author": "author2"
+    "id": 1,
+    "endingsTitle": "Wszystkie spłonęły",
+    "endingsAuthor": "author1",
+    "relatedBook": {
+      "booksTitle": "Cień wiatru",
+      "booksAuthor": "Carlos Ruiz Zafon",
+      "booksId": 1
+    },
+    "rating" : 4.2
+  },
+  {
+    "id": 2,
+    "endingsTitle": "Zagubiony",
+    "endingsAuthor": "author1",
+    "relatedBook": {
+      "booksTitle": "Cień wiatru",
+      "booksAuthor": "Carlos Ruiz Zafon",
+      "booksId": 1
+    },
+    "rating" : 2.3
+  },
+  {
+    "id": 3,
+    "endingsTitle": "A co jeśli jest brudny..",
+    "endingsAuthor": "author1",
+    "relatedBook": {
+      "booksTitle": "Czysty Kod",
+      "booksAuthor": "Robert C. Martin",
+      "booksId": 2
+    },
+    "rating" : 4.6
+  },
+  {
+    "id": 4,
+    "endingsTitle": "Gdy wszystko zawodzi",
+    "endingsAuthor": "author1",
+    "relatedBook": {
+      "booksTitle": "Czysty Kod",
+      "booksAuthor": "Robert C. Martin",
+      "booksId": 2
+    },
+    "rating" : 3.9
+  },
+  {
+    "id": 5,
+    "endingsTitle": "Morderca wciąż na wolności",
+    "endingsAuthor": "author1",
+    "relatedBook": {
+      "booksTitle": "Mężczyźni, którzy nienawidzą kobiet",
+      "booksAuthor": "Stieg Larsson",
+      "booksId": 3
+    },
+    "rating" : 4.2
+  },
+  {
+    "id": 6,
+    "endingsTitle": "Uciekinier",
+    "endingsAuthor": "author1",
+    "relatedBook": {
+      "booksTitle": "Mężczyźni, którzy nienawidzą kobiet",
+      "booksAuthor": "Stieg Larsson",
+      "booksId": 3
+    },
+    "rating" : 4.1
   }
 ]
