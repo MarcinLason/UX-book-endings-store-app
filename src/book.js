@@ -54,10 +54,6 @@ class BookParameters extends React.Component {
         }
     }
 
-    prepareComments(comments) {
-        return "elo";
-    }
-
     prepareEndings(endings) {
         return "czesc"
     }
@@ -65,7 +61,12 @@ class BookParameters extends React.Component {
     render() {
         var id = (this.props.url).split("/book")[1].replace('/', '');
         var currentBook = books[parseInt(id)];
-        var commentsString = this.prepareComments(currentBook['comments']);
+        var comment1String = currentBook['comments']['comment1']['date'].toString();
+        var comment1StringName = currentBook['comments']['comment1']['name'].toString();
+        var comment1StringText = currentBook['comments']['comment1']['text'].toString();
+        var comment2String = currentBook['comments']['comment2']['date'].toString();
+        var comment2StringName = currentBook['comments']['comment2']['name'].toString();
+        var comment2StringText = currentBook['comments']['comment2']['text'].toString();
         var endingsString = this.prepareEndings(currentBook);
         return (
             <div>
@@ -105,7 +106,7 @@ class BookParameters extends React.Component {
                     <div id="comments">
                         <h1>Komentarze</h1>
                         <textarea disabled={true} id="comments-area">
-                            {commentsString}
+                            {comment1String + ' ' + comment1StringName + '\n' + comment1StringText + '\n ' + '\n' + comment2String + ' ' + comment2StringName + '\n' + comment2StringText + '\n ' + '\n'}
                         </textarea>
                     </div>
                     <div id="endings">
