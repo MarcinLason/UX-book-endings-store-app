@@ -10,18 +10,18 @@
     "pages": "325",
     "domain": "Fantasy",
     "description": "Harry Potter i Kamień Filozoficzny – pierwsza książka z siedmiotomowego cyklu autorstwa angielskiej powieściopisarki J.K. Rowling, przedstawiająca początek historii młodego czarodzieja Harry’ego Pottera.",
-    "comments": {
-      "comment1": {
+    "comments": [
+      {
         "date": "22.04.2018r.",
         "name": "Paweł Kasprzyk",
         "text": "Świetna książka, polecam zarówno tym młodszym jak i tym odrobinę starszym."
       },
-      "comment2": {
+      {
         "date": "04.05.2018r.",
         "name": "Jan Nowak",
         "text": "Przeciętna pozycja, strata czasu."
       }
-    }
+    ]
   },
   {
     "id": 1,
@@ -34,18 +34,18 @@
     "pages": "565",
     "domain": "Kryminał",
     "description": "Akcja powieści rozgrywa się w Barcelonie w drugiej połowie XX wieku, ale w retrospekcjach pojawiają się lata wcześniejsze. Bohaterem jest Daniel Sempere. Towarzyszymy mu od 10 roku życia, kiedy to jego ojciec zaprowadza go na Cmentarz Zapomnianych Książek. Od tego momentu zaczyna się historia Daniela, próbującego odkryć tajemnicę zawiązaną z autorem jednej z zapomnianych książek - Julianem Caraxem. Daniel, zauroczony powieścią Caraxa Cień wiatru, próbuje odnaleźć inne książki jego autorstwa. Okazuje się jednak, że wszystkie książki zostały spalone. Komuś zależy również na zniszczeniu ostatniego egzemplarza, który znajduje się w posiadaniu nastoletniego chłopaka. Autor wprowadza do powieści wiele postaci i wątków, które, pozornie luźno ze sobą związane, na końcu prowadzą do rozwiązania zagadki.",
-    "comments": {
-      "comment1": {
+    "comments": [
+      {
         "date": "21.02.2018r.",
         "name": "Jan Urbański",
         "text": "Całkiem ciekawa, warta przeczytania."
       },
-      "comment2": {
+      {
         "date": "02.05.2017r.",
         "name": "Elżbieta Nowak",
         "text": "Super, uwielbiam ją!!!"
       }
-    }
+    ]
   },
   {
     "id": 2,
@@ -58,18 +58,16 @@
     "pages": "424",
     "domain": "Dydaktyka",
     "description": "O tym, ile problemów sprawia niedbale napisany kod, wie każdy programista. Nie wszyscy jednak wiedzą, jak napisać ten świetny, czysty kod i czym właściwie powinien się on charakteryzować. Co więcej - jak odróżnić dobry kod od złego? Odpowiedź na te pytania oraz sposoby tworzenia czystego, czytelnego kodu znajdziesz właśnie w tej książce. Podręcznik jest obowiązkową pozycją dla każdego, kto chce poznać techniki rzetelnego i efektywnego programowania. W książce Czysty kod. Podręcznik dobrego programisty szczegółowo omówione zostały zasady, wzorce i najlepsze praktyki pisania czystego kodu. Podręcznik zawiera także kilka analiz przypadków o coraz większej złożoności, z których każda jest doskonałym ćwiczeniem porządkowania zanieczyszczonego bądź nieudanego kodu.Z tego podręcznika dowiesz się m.in., jak tworzyć dobre nazwy, obiekty i funkcje, a także jak tworzyć testy jednostkowe i korzystać z programowania sterowanego testami. Nauczysz się przekształcać kod zawierający problemy w taki, który jest solidny i efektywny.",
-    "comments": {
-      "comment1": {
+    "comments": [{
         "date": "03.02.2018r.",
         "name": "Robert Gabryś",
         "text": "Bardzo pouczająca, pomogła mi poprawić jakość mojego kodu."
-      },
-      "comment2": {
+      }, {
         "date": "26.11.2017r.",
         "name": "Jan Nowak",
         "text": "Fajna, fajna, ale większość rzeczy dość oczywista. Mimo wszystko warto przeczytać."
       }
-    }
+    ]
   },
   {
     "id": 3,
@@ -81,18 +79,17 @@
     "publisher": "Norstedts Forlag",
     "pages": "628",
     "domain": "Dreszczowiec",
-    "description": "",
-    "comments": {
-      "comment1": {
+    "description": "Pewnego wrześniowego dnia w 1966 roku szesnastoletnia Harriet Vanger znika jak kamień w wodę. Prawie czterdzieści lat później Mikael Blomkvist otrzymuje nietypowe zlecenie od Henrika Vangera. Stojący na czele wielkiego koncernu magnat przemysłowy prosi znajdującego się na zakręcie życiowym dziennikarza o napisanie kroniki rodzinnej Vangerów. Okazuje się, że spisywanie dziejów to tylko pretekst do próby rozwiązania zagadki zniknięcia Harriet. Mikael Blomkvist, skazany za zniesławienie redaktor czasopisma Millennium, przechodzi kryzys wartości i rezygnuje z obowiązków zawodowych. Podejmuje się niezwykłego zlecenia, opuszcza Sztokholm i osiada w niewielkiej wiosce na północy kraju. Po pewnym czasie dołącza do niego młoda ekscentryczna hackerka, Lisbeth Salander. Wspólnie, choć nie zawsze ramię w ramię, biorą pod lupę przeszłość klanu Vangerów i wykrywają prawdę o wiele bardziej mroczną i krwawą niż ta, którą spodziewali się odnaleźć...",
+    "comments": [ {
         "date": "02.02.2018r.",
         "name": "Ola Nowak",
         "text": "Do końca trzyma w napięciu, extra!."
       },
-      "comment2": {
+       {
         "date": "01.01.2018r.",
         "name": "Jan Nowak",
         "text": "Bardzo dobra pozycja, z emocjami przeżywałem los bohaterów."
       }
-    }
+    ]
   }
 ]

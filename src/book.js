@@ -8,6 +8,9 @@ import image3 from './assets/3.jpg';
 import './books.css';
 import StarRatingComponent from 'react-star-rating-component';
 import {Header} from './main'
+import Popup from "reactjs-popup";
+
+var commentsString = '';
 
 class StarComponent extends React.Component {
     constructor(props) {
@@ -41,6 +44,14 @@ class StarComponent extends React.Component {
 
 class BookParameters extends React.Component {
 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            commentsStringChanged: false
+        };
+    }
+
     getImageToDisplay(id) {
         if (id == 0) {
             return image0;
@@ -58,19 +69,27 @@ class BookParameters extends React.Component {
     prepareEndings(book) {
         var id = parseInt(book['id']);
         var endingsToList = [];
-        endings.map(ending => {if (parseInt(ending['relatedBook']['booksId'].toString()) == id) endingsToList.push(<a href={'/'} > {ending['endingsTitle']} </a>)});
+        endings.map(ending => {
+            if (parseInt(ending['relatedBook']['booksId'].toString()) == id) endingsToList.push(<a
+                href={'/'}> {ending['endingsTitle']} </a>)
+        });
         return endingsToList;
+    }
+
+    prepareComments(book, commentToAdd) {
+        if (this.state.commentsStringChanged == false){
+            book['comments'].map(comment => commentsString = commentsString + ('' + comment['date'] + ' ' + comment['name'] + '\n' + comment['text'] + '\n' + '\n'));
+            this.state.commentsStringChanged == true;
+        } else {
+            commentsString = commentsString + commentToAdd.toString();
+        }
+
     }
 
     render() {
         var id = (this.props.url).split("/book")[1].replace('/', '');
         var currentBook = books[parseInt(id)];
-        var comment1String = currentBook['comments']['comment1']['date'].toString();
-        var comment1StringName = currentBook['comments']['comment1']['name'].toString();
-        var comment1StringText = currentBook['comments']['comment1']['text'].toString();
-        var comment2String = currentBook['comments']['comment2']['date'].toString();
-        var comment2StringName = currentBook['comments']['comment2']['name'].toString();
-        var comment2StringText = currentBook['comments']['comment2']['text'].toString();
+        this.prepareComments(currentBook, '');
         var endingsString = this.prepareEndings(currentBook);
         return (
             <div>
@@ -101,7 +120,7 @@ class BookParameters extends React.Component {
                     <img id="bookImg" src={this.getImageToDisplay(id)} alt="Logo"/>
                 </div>
                 <div id="start">
-                    <StarComponent rate={currentBook['rank']}/>
+                    <StarComponent rate={currentBook['rating']}/>
                 </div>
                 <div>
                     <textarea disabled id="description-area">{currentBook['description']}</textarea>
@@ -110,8 +129,9 @@ class BookParameters extends React.Component {
                     <div id="comments">
                         <h1>Komentarze</h1>
                         <textarea disabled={true} id="comments-area">
-                            {comment1String + ' ' + comment1StringName + '\n' + comment1StringText + '\n ' + '\n' + comment2String + ' ' + comment2StringName + '\n' + comment2StringText + '\n ' + '\n'}
+                            {commentsString}
                         </textarea>
+                        <Popup trigger={<button id={"addCommentButton"}>Dodaj komentarz</button>} position={"bottom right"}/>
                     </div>
                     <div id="endings">
                         <h1>Zakończenia alternatywne</h1>
@@ -119,6 +139,9 @@ class BookParameters extends React.Component {
                             <div id="endings-area">
                                 {endingsString.map(ending => <p>{ending}</p>)}
                             </div>
+                            <form action="/">
+                                <input type="submit" value="Dodaj zakończenie" />
+                            </form>
                         </div>
                     </div>
                 </div>
