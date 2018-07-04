@@ -46,8 +46,8 @@ var bookColumns = [{
     width: 400
 }, {
     id: 'RankColumnId',
-    Header: 'Rank',
-    accessor: 'rank',
+    Header: 'Rating',
+    accessor: 'rating',
     width: 100
 }];
 
