@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font: 14px "Century Gothic", Futura, sans-serif;
+    font: 13px "Century Gothic", Futura, sans-serif;
     margin-top: 0px;
     min-width: 100%;
     min-height: 100%;
@@ -120,6 +120,7 @@ th {
 }
 
 textarea {
+    padding: 6px;
     border: #6f7471;
     min-height: 100px;
     color: black;

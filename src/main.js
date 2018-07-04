@@ -128,7 +128,7 @@ class TableContainer extends React.Component {
         return <ReactTable
             data={this.state.tableDataset}
             columns={this.state.tableColumns}
-            defaultPageSize={10}
+            defaultPageSize={5}
         />
     }
 

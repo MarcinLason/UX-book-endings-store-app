@@ -137,10 +137,10 @@ class BookParameters extends React.Component {
                         <h1>Zakończenia alternatywne</h1>
                         <div id="endings-div">
                             <div id="endings-area">
-                                {endingsString.map(ending => <p>{ending}</p>)}
+                                {endingsString.map(ending => <p className="ending-pos">{ending}</p>)}
                             </div>
                             <form action="/">
-                                <input type="submit" value="Dodaj zakończenie" />
+                                <button type="submit"> Dodaj zakończenie </button>
                             </form>
                         </div>
                     </div>
