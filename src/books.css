@@ -27,9 +27,8 @@
     width: 90%;
 }
 
-StarRatingComponent{
-    min-height: 100px;
-    min-width: 100px;
+label i {
+    font-size: x-large;
 }
 
 #comments {
