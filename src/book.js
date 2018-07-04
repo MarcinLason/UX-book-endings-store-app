@@ -8,9 +8,9 @@ import image3 from './assets/3.jpg';
 import './books.css';
 import StarRatingComponent from 'react-star-rating-component';
 import {Header} from './main'
-import Popup from "reactjs-popup";
 
 var commentsString = '';
+var myComment = '';
 
 class StarComponent extends React.Component {
     constructor(props) {
@@ -48,7 +48,8 @@ class BookParameters extends React.Component {
         super(props);
 
         this.state = {
-            commentsStringChanged: false
+            commentsStringChanged: false,
+            myCommentString: ''
         };
     }
 
@@ -83,7 +84,14 @@ class BookParameters extends React.Component {
         } else {
             commentsString = commentsString + commentToAdd.toString();
         }
+    }
 
+    addMyComment(comment) {
+        console.log("Dostalem cos");
+        console.log(comment);
+        myComment = comment;
+        var date = new Intl.DateTimeFormat('pl-PL').format(Date.now());
+        document.getElementById("comments-area").value = commentsString + ('' + '0' + date + 'r.' + ' ' + 'Ty' + '\n' + myComment + '\n' + '\n');
     }
 
     render() {
@@ -131,7 +139,7 @@ class BookParameters extends React.Component {
                         <textarea disabled={true} id="comments-area">
                             {commentsString}
                         </textarea>
-                        <Popup trigger={<button id={"addCommentButton"}>Dodaj komentarz</button>} position={"bottom right"}/>
+                        <NameForm action={this.addMyComment}/>
                     </div>
                     <div id="endings">
                         <h1>Zakończenia alternatywne</h1>
@@ -145,6 +153,42 @@ class BookParameters extends React.Component {
                         </div>
                     </div>
                 </div>
+            </div>
+        );
+    }
+}
+
+class NameForm extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: '',
+            action: props.action
+        };
+
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleChange(event) {
+        this.setState({value: event.target.value});
+    }
+
+    handleSubmit(event) {
+        this.state.action(this.state.value);
+        event.preventDefault();
+    }
+
+    render() {
+        return (
+            <div id={"formContainer"}>
+                <form onSubmit={this.handleSubmit}>
+                    <label>
+                        Add your comment:<br/>
+                        <input type="text" value={this.state.value} onChange={this.handleChange}/>
+                    </label><br/>
+                    <input type="submit" value="Submit"/>
+                </form>
             </div>
         );
     }
