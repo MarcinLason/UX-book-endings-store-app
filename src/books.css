@@ -48,7 +48,7 @@ label i {
     height: 100%;
 }
 #endings-div {
-    height: 106px;
+    height: 110px;
     margin: 0;
     padding: 1px;
     color: black;
@@ -62,7 +62,7 @@ label i {
 
 .ending-pos {
     margin-left: 25px;
-    line-height: 50px;
+    line-height: 30px;
 }
 
 button {
@@ -76,4 +76,8 @@ button {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+#endingsIdForm {
+    margin: 10px;
 }

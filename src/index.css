@@ -126,3 +126,7 @@ textarea {
     color: black;
     background-color: rgba(201, 190, 174, 0.4);
 }
+
+#inputForComments {
+    background:transparent;
+}

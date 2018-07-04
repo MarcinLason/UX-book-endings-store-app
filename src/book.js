@@ -147,7 +147,7 @@ class BookParameters extends React.Component {
                             <div id="endings-area">
                                 {endingsString.map(ending => <p className="ending-pos">{ending}</p>)}
                             </div>
-                            <form action="/">
+                            <form id="endingsIdForm" action="/">
                                 <button type="submit"> Dodaj zakończenie </button>
                             </form>
                         </div>
@@ -184,10 +184,9 @@ class NameForm extends React.Component {
             <div id={"formContainer"}>
                 <form onSubmit={this.handleSubmit}>
                     <label>
-                        Add your comment:<br/>
-                        <input type="text" value={this.state.value} onChange={this.handleChange}/>
+                        <input type="text" id={"inputForComments"} defaultValue={"Type your comment here"} value={this.state.value} onChange={this.handleChange}/>
                     </label><br/>
-                    <input type="submit" value="Submit"/>
+                    <button type="submit">Dodaj komentarz</button>
                 </form>
             </div>
         );

@@ -145,16 +145,6 @@ class TableContainer extends React.Component {
     render() {
         return (
             <div className="TableContainer">
-                <div className="RadioButtons">
-                    <form id="searchParameterForm">
-                        <label>
-                            <input type="radio" name="sort" value="ranking"/>Ranking
-                        </label><br/>
-                        <label>
-                            <input type="radio" name="sort" value="new"/>Nowości
-                        </label><br/>
-                    </form>
-                </div>
                 <div className="BookEndingsButtons">
                     <form id="bookEndingsForm">
                         <label>
