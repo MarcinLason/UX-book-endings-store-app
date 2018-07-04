@@ -1,5 +1,6 @@
 import React from 'react';
 import books from './books.json';
+import endings from './endings.json';
 import image0 from './assets/0.jpg';
 import image1 from './assets/1.jpg';
 import image2 from './assets/2.jpg';
@@ -54,8 +55,11 @@ class BookParameters extends React.Component {
         }
     }
 
-    prepareEndings(endings) {
-        return "czesc"
+    prepareEndings(book) {
+        var id = parseInt(book['id']);
+        var endingsToList = [];
+        endings.map(ending => {if (parseInt(ending['relatedBook']['booksId'].toString()) == id) endingsToList.push(<a href={'/'} > {ending['endingsTitle']} </a>)});
+        return endingsToList;
     }
 
     render() {
@@ -112,9 +116,9 @@ class BookParameters extends React.Component {
                     <div id="endings">
                         <h1>Zakończenia alternatywne</h1>
                         <div id="endings-div">
-                            <textarea disabled={true} id="endings-area">
-                                {endingsString}
-                            </textarea>
+                            <div id="endings-area">
+                                {endingsString.map(ending => <p>{ending}</p>)}
+                            </div>
                         </div>
                     </div>
                 </div>
